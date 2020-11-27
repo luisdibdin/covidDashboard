@@ -5,9 +5,6 @@ import { Helmet } from "react-helmet";
 import "assets/stylesheets/application.scss";
 import { ChakraProvider, Flex, Heading } from "@chakra-ui/react";
 
-import Header from "components/Header";
-import Footer from "components/Footer";
-
 const Layout = ({ children, pageName }) => {
   let className = "";
 
@@ -21,8 +18,8 @@ const Layout = ({ children, pageName }) => {
         <title>COVID Dashboard</title>
       </Helmet>
       <div className="wrapper">
-        <Flex h='80px' w='100%' bg='gray.800' justify='center' align='center'>
-          <Heading>COVID-19 Dashboard</Heading>
+        <Flex h='60px' w='100%' bg='gray.800' justify='center' align='center'>
+          <Heading color='white'>COVID-19 Dashboard</Heading>
         </Flex>
         <main>{children}</main>
       </div>
